@@ -1,0 +1,174 @@
+:root {
+  --resume-section-gap: 48px;
+}
+
+.resume__container {
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--resume-section-gap);
+
+  @media screen and (width >= 720px) {
+    flex-flow: row-reverse nowrap;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  p {
+    // font-size: 1.125rem;
+    // line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+.resume__section {
+  @media screen and (width >= 720px) {
+    margin-bottom: var(--resume-section-gap);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.resume__meta {
+  display: contents;
+
+  @media screen and (width >= 720px) {
+    display: block;
+    position: sticky;
+    top: 12px;
+    max-height: 100vh;
+    overflow-y: auto;
+    flex: 1 0 270px;
+  }
+
+  p {
+    margin: 0 0 0.5em;
+  }
+
+  .resume__title {
+    margin-bottom: 0.5em;
+  }
+}
+
+.resume__main {
+  display: contents;
+
+  @media screen and (width >= 720px) {
+    display: block;
+  }
+}
+
+.resume__profile {
+  order: 2;
+
+  @media screen and (width >= 720px) {
+    order: unset;
+  }
+}
+
+.resume__contact  {
+  order: 1;
+
+  @media screen and (width >= 720px) {
+    order: unset;
+  }
+}
+
+.resume__skills {
+
+  order: 3;
+
+  @media screen and (width >= 720px) {
+    order: unset;
+  }
+
+  .resume__skills__list {
+
+    display: grid;
+    gap: 0 24px;
+    grid-template-columns: repeat(2, 1fr);
+
+    font-family: monospace;
+    font-size: 13px;
+
+    @media screen and (width >= 720px) {
+      display: block;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      line-height: 1;
+  
+      .resume__skills__title {
+        grid-column: 1 / 2;
+        display: block;
+        text-align: right;
+      }
+  
+      .resume__skills__value {
+        grid-column: 2 / 3;
+        background: var(--highlight-contrast);
+        position: relative;
+        display: block;
+        height: 6px;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-top: 3px;
+        max-width: 120px;
+      }
+  
+      .resume__skills__value-data {
+        position: absolute;
+        left: 0;
+        display: block;
+        background-color: var(--highlight-color);
+        text-indent: -100vw;
+        height: 100%;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+  }  
+}
+
+.resume__experience {
+  order: 4;
+
+  @media screen and (width >= 720px) {
+    order: unset;
+  }
+
+  .resume__experience__jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .resume__experience__highlights {
+    list-style-type: disc;
+    margin-left: 1em;
+  }
+
+  .resume__exeprience__title {
+    margin: 0 0 .5em;
+  }
+}
+

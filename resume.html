@@ -1,0 +1,70 @@
+---
+title: "Resume - Rob Maurizi"
+layout: default
+---
+
+{% assign data = site.data.resume %}
+{% assign skills_helper = site.data.skills %}
+
+<div class="resume__container">
+
+  <div class="resume__meta">
+    <div class="resume__contact resume__section">
+      <h1 class="resume__title">{{ data.name }}</h1>
+      <div class="resume__contact__details">
+        <p>{{ data.location }}</p>
+        <p><a href="mailto:{{ data.email }}">{{ data.email }}</a></p>
+        <ul class="resume__contact__urls">
+          {% for url in data.urls %}
+            <li><a href="{{ url }}">{{ url }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  
+    <div class="resume__skills resume__section">
+      <h2>Skills</h2>
+      <ul class="resume__skills__list">
+      {% for skill in skills_helper %}
+        {% assign skill_value = skill[1].level | times: 10 %}
+        <li>
+          <span class="resume__skills__title">{{ skill[1].title }}</span><span class="resume__skills__value"><span class="resume__skills__value-data" style="width: {{ skill_value }}%;">: {{ skill[1].value }}</span></span>
+        </li>
+      {% endfor %}
+      </ul>
+      
+    </div>
+  </div>
+
+  <div class="resume__main">
+    <div class="resume__profile resume__section">
+      <h2>Profile</h2>
+      <p>{{ data.profile }}</p>
+    </div>
+  
+    <div class="resume__experience resume__section">
+      <h2>Experience</h2>
+      <ul class="resume__experience__jobs">
+      {% for job in data.experience %}
+        <li><h3 class="resume__exeprience__title">
+          {{ job.title }}, {{ job.employer }}, {{ job.location }}; {{ job.dates }}
+        </h3>
+        <div class="resume__experience__skills">
+          {% for skill in job.skills %}
+            {% assign skill_key = skill | downcase %}
+            {{ skills_helper[skill_key].icon }}
+          {% endfor %}
+        </div>
+        <ul class="resume__experience__highlights">
+          {% for item in job.highlights %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+      </ul>
+    </div>
+  
+  </div>
+
+</div>

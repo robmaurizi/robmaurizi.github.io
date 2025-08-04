@@ -1,0 +1,40 @@
+html:
+  icon: '<i class="devicon-html5-plain colored" aria-label="HTML"></i>'
+  level: 10
+  title: HTML
+css:
+  icon: '<i class="devicon-css3-plain colored" aria-label="CSS"></i>'
+  level: 10
+  title: CSS/SCSS
+javascript:
+  icon: '<i class="devicon-javascript-plain colored" aria-label="Javascript"></i>'
+  level: 9
+  title: Javascript
+react:
+  icon: '<i class="devicon-react-original colored" aria-label="React"></i>'
+  level: 7
+  title: React
+twig:
+  icon:
+  level: 8
+  title: Twig
+php:
+  icon: '<i class="devicon-php-plain colored" aria-label="PHP"></i>'
+  level: 7
+  title: PHP
+mysql:
+  icon: '<i class="devicon-mysql-original colored" aria-label="MySQL"></i>'
+  title: MySQL
+  level: 7
+wordpress:
+  icon: '<i class="devicon-wordpress-plain colored" aria-label="WordPress"></i>'
+  level: 8
+  title: WordPress
+drupal:
+  icon: '<i class="devicon-drupal-plain colored" aria-label="Drupal"></i>'
+  title: Drupal
+  level: 6
+git:
+  icon: '<i class="devicon-git-plain colored" aria-label="Git"></i>'
+  title: Git
+  level: 7

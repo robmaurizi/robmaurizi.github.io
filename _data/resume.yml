@@ -1,0 +1,151 @@
+name: Rob Maurizi
+email: robert.maurizi@gmail.com
+location: Montclair, NJ USA 07042
+urls:
+  - https://robmaurizi.github.io
+profile: I am a full-stack web developer with over 20 years experience across a diverse landscape of industries and proficiencies in many web technologies & frameworks including front-end (HTML/CSS/SCSS/JS), React, and the LAMP stack. I’m able to lead a project from conception through deployment, and I enjoy learning new skills and solving problems.
+skills:
+  - key: html
+    title: HTML
+    value: 10
+  - key: css
+    title: CSS/SCSS
+    value: 10
+  - key: js
+    title: Javascript
+    value: 9
+  - key: react
+    title: React
+    value: 7
+  - key: twig
+    title: Twig
+    value: 8
+  - key: php
+    title: PHP
+    value: 7
+  - key: mysql
+    title: MySQL
+    value: 7
+  - key: wordpress
+    title: WordPress
+    value: 8
+  - key: drupal
+    title: Drupal
+    value: 6
+  - key: git
+    title: Git
+    value: 7
+experience:
+  - title: Software Engineer II
+    employer: Memorial Sloan Kettering Cancer Center
+    location: New York, NY
+    dates: "2021–Present"
+    highlights:
+      - "Maintain front-end codebase (Twig and React) for entire public-facing mskcc.org website within our design system"
+      - "Help architect and develop new front-end components"
+      - "Coordinate transition to new design system across multiple environments and code-bases"
+      - "Guide and mentor junior developers through pair-programming and peer code reviews"
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+      - React
+      - PHP
+      - Drupal
+      - Twig
+      
+  - title: Independent Contractor
+    employer: RHM Interactive
+    location: Montclair, NJ
+    dates: "2010–Present"
+    highlights:
+      - "Designed and developed WordPress and static websites for small- & medium-sized businesses"
+      - "Contracted full-stack development services to other agencies for clients such as Cabela’s, Panasonic, Heineken USA, and Martha Stewart Living Omnimedia"
+    skills:
+      - WordPress
+      - HTML
+      - Javascript
+      - PHP
+      - CSS
+      - React
+      - MySQL
+
+  - title: Sr. Developer
+    employer: Paper Tiger Design
+    location: Ridgewood, NJ
+    dates: "2019–2020"
+    highlights:
+      - "Developed PHP-based integrations with WordPress and CraftCMS systems"
+      - "Customized CMS for client needs based on content and editorial requirements"
+    skills:
+      - WordPress
+      - PHP
+      - HTML
+      - CSS
+
+  - title: Full-Stack Developer
+    employer: Addison Design
+    location: New York, NY
+    dates: "2017–2018"
+    highlights:
+      - "Developed client- and server-side for numerous WordPress sites, including custom themes and plugins"
+      - "Developed static financial reporting sites for several clients"
+    skills:
+      - WordPress
+      - HTML
+      - PHP
+      - CSS
+      - Javascript
+
+  - title: HTML Team Lead
+    employer: Martha Stweart Living Omnimedia
+    location: New York, NY
+    dates: "2008–2010"
+    highlights:
+      - "Led front-end architecture for all MSLO web properties"
+      - "Launched front-end re-design of MS Weddings online"
+      - "Mentored teammates, providing guidance & feedback through code reviews"
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+
+  - title: Front-End Architect
+    employer: Ogilvy & Mather
+    location: New York, NY
+    dates: 2008
+    highlights:
+      - "Developed front-end code for client & brand micro-sites"
+      - "Re-architected client sites to use web standards"
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+
+  - title: Sr. Interface Developer
+    employer: Fry, Inc.
+    location: New York, NY
+    dates: "2006–2008"
+    highlights:
+      - "Developed & integrated front-end code for client e-commerce sites"
+      - "Led front-end development for several redesign & rebranding efforts"
+      - "Oversaw ADA-compliance initiatives for the Fry NYC office"
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+      
+  - title: Sr. IT Professional
+    employer: University of Vermont
+    location: Burlington, VT
+    dates: "2001–2006"
+    highlights:
+      - "Developed numerous Flash-based games, simulations, and lab activities"
+      - "Led front-end & back-end development on several campus website initiatives"
+    skills:
+      - HTML
+      - PHP
+      - MySQL
+      - CSS
+      - Javascript
+      - Flash

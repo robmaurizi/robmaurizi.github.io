@@ -1,0 +1,126 @@
+:root {
+  --body-background: #FFF;
+  --headline-color: #222;
+  --highlight-color: #439449;
+  --highlight-contrast: #DEDEDE;
+  --copy-color: #222;
+  --link-color: #2b34a8;
+  --font-headline: 'Helvetica Neue',sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    --body-background: #222;
+    --copy-color: rgba(255, 255, 255, .9);
+    --headline-color: rgba(255, 255, 255, .9);
+    --highlight-color: #fffd95;
+    --highlight-contrast: #666;
+    --link-color: rgba(255, 255, 255, .9);
+  }
+}
+
+body {
+  background: var(--body-background);
+  font-family: 'Hoefler Text',Garamond,serif;
+  color: var(--copy-color);
+  font-size: .9375rem;
+  line-height: 1.15;
+
+  p {
+    margin: 0 0 1em;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--headline-color);
+  font-family: var(--font-headline);
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-header {
+  padding: 20px 0;
+  border-bottom: 2px solid var(--headline-color);
+  margin-bottom: 60px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-title {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: var(--font-headline);
+    letter-spacing: -0.03em;
+  }
+
+  .site-description {
+    font-size: 1.25em;
+  }
+
+  .site-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    gap: 20px;
+
+    @media screen and (width < 720px) {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+}
+
+.site-content {
+  padding-bottom: 40px;
+  border-bottom: 2px solid var(--headline-color);
+  margin-bottom: 40px;
+
+  font-size: 1.125rem;
+  line-height: 1.5;
+
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+
+  list-style-type: none;
+  margin: 0 0 8px;
+  padding: 0;
+
+  font-family: var(--font-headline);
+  font-weight: bold;
+
+  a:hover,
+  a.active {
+    color: var(--highlight-color);
+  }
+}
+
+.site-container {
+  margin: 0 20px;
+
+  @media screen and (width > 1240px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 1.25em;
+  padding-bottom: 48px;
+}
